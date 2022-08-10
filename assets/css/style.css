@@ -10794,6 +10794,78 @@ textarea.form-control-lg {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.display-2 {
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.display-2--intro {
+  display: inline-block;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.display-2--descr {
+  font-size: 1rem;
+  display: block;
+  text-transform: none;
+  margin-top: 1.2rem;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .display-2--descr {
+    font-size: 1.4rem;
+    display: inline-block;
+  }
+}
+
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #39a2db;
+}
+
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  height: 0.2rem;
+  padding-top: 0.5rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #39a2db;
+}
+
+.display-3 {
+  font-family: "Poppins", sans-serif;
+}
+.display-3--title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  background-image: linear-gradient(to right, #39a2db, #1363df);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 992px) {
+  .display-3--title {
+    font-size: 1.8rem;
+  }
+}
+
+.border-right {
+  border-right: 0.1rem solid #dee2e6;
+  height: 100%;
+}
+
+.gradient {
+  background: linear-gradient(to right, rgba(57, 162, 219, 0.95), rgba(19, 99, 223, 0.95));
+}
+
 .menu {
   background: linear-gradient(to right, rgba(57, 162, 219, 0.95), rgba(19, 99, 223, 0.95));
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -10803,6 +10875,9 @@ textarea.form-control-lg {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2rem;
+}
+.menu .logo:hover {
+  color: #06283d;
 }
 .menu li {
   padding: 0 0.7rem;
@@ -10815,6 +10890,31 @@ textarea.form-control-lg {
 }
 .menu li a:hover {
   color: #06283d;
+}
+
+.intro-section {
+  background: url("../../images/intro/intro_bg.jpg") center center/cover no-repeat;
+  padding: 10rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+.campanies {
+  padding: 0 0 5rem 0;
+}
+.campanies__logo-box {
+  position: relative;
+  max-width: 100%;
+  height: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.campanies__logo-box img {
+  height: 100%;
+}
+.campanies__logo-box img:hover {
+  filter: grayscale(120);
 }
 
 /*# sourceMappingURL=style.css.map */

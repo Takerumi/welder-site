@@ -10,6 +10,9 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2rem;
+    &:hover {
+      color: $dark-blue;
+    }
   }
 
   li {
