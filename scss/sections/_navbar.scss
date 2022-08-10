@@ -1,0 +1,28 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu {
+  @include gradient;
+  @include shadow;
+
+  .logo {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  li {
+    padding: 0 0.7rem;
+
+    a {
+      color: $white;
+      text-transform: capitalize;
+      font-weight: 600;
+      font-size: 1rem;
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+  }
+}

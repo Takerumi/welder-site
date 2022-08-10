@@ -1,0 +1,11 @@
+@use 'custom';
+
+// импорт компонентов
+
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typography';
+
+// импорт стилей для секций
+@use 'sections/navbar';
