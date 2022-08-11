@@ -7,8 +7,12 @@
 }
 
 .cta-info {
-  padding: 3rem;
+  padding: 3rem 1.5rem;
   margin: 1rem 0;
+
+  @include media-breakpoint-up(sm) {
+    padding: 3rem;
+  }
 
   &__list {
     position: relative;
@@ -30,7 +34,11 @@
 
 // форма
 .form {
-  padding: 3rem;
+  padding: 3rem 1.5rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 3rem;
+  }
 
   button {
     border: none;

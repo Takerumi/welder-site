@@ -10807,12 +10807,12 @@ textarea.form-control-lg {
 .display-2 {
   margin-bottom: 1rem;
   text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .display-2--intro {
   display: inline-block;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .display-2--descr {
   font-size: 1rem;
@@ -10848,13 +10848,13 @@ textarea.form-control-lg {
 }
 
 .display-3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .display-3--title {
   font-size: 1.2rem;
   text-transform: capitalize;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: inline-block;
   background-image: linear-gradient(to right, #39a2db, #1363df);
   background-clip: text;
@@ -10921,6 +10921,11 @@ textarea.form-control-lg {
 .intros .video-box a span i {
   font-size: 6rem;
   color: #1363df;
+}
+@media (max-width: 767.98px) {
+  .intros .video-box {
+    display: none;
+  }
 }
 
 .border-animation {
@@ -11045,6 +11050,10 @@ textarea.form-control-lg {
   text-transform: capitalize;
 }
 
+.filter button {
+  margin-bottom: 0.5rem;
+}
+
 .portfolio-box {
   position: relative;
   width: 100%;
@@ -11099,8 +11108,13 @@ textarea.form-control-lg {
 }
 
 .cta-info {
-  padding: 3rem;
+  padding: 3rem 1.5rem;
   margin: 1rem 0;
+}
+@media (min-width: 576px) {
+  .cta-info {
+    padding: 3rem;
+  }
 }
 .cta-info__list {
   position: relative;
@@ -11119,7 +11133,12 @@ textarea.form-control-lg {
 }
 
 .form {
-  padding: 3rem;
+  padding: 3rem 1.5rem;
+}
+@media (min-width: 576px) {
+  .form {
+    padding: 3rem;
+  }
 }
 .form button {
   border: none;
