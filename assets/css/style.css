@@ -10917,4 +10917,35 @@ textarea.form-control-lg {
   filter: grayscale(120);
 }
 
+@media (max-width: 575.98px) {
+  .our-services .row--reverse {
+    flex-direction: column-reverse;
+  }
+}
+.our-services .services {
+  position: relative;
+  padding: 1rem 0;
+}
+.our-services .services__content {
+  padding: 1rem;
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  .our-services .services__content {
+    margin-top: 5rem;
+  }
+}
+.our-services .services__content .icon {
+  font-size: 1.5rem;
+  color: #39a2db;
+}
+@media (min-width: 992px) {
+  .our-services .services__content .icon {
+    font-size: 2.5rem;
+  }
+}
+.our-services .services__pic {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
