@@ -10908,6 +10908,19 @@ textarea.form-control-lg {
   text-align: center;
 }
 
+.hr--footer {
+  width: 60px;
+  height: 2px;
+  display: inline-block;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+}
+.hr--testimonials {
+  margin: 0 auto;
+  width: 100px;
+  height: 3px;
+}
+
 .menu {
   background: linear-gradient(to right, rgba(57, 162, 219, 0.95), rgba(19, 99, 223, 0.95));
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);

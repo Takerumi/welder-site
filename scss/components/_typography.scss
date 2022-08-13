@@ -107,3 +107,18 @@
     text-align: center;
   }
 }
+
+.hr {
+  &--footer {
+    width: 60px;
+    height: 2px;
+    display: inline-block;
+    background-color: $white;
+    margin-bottom: 1.5rem;
+  }
+  &--testimonials {
+    margin: 0 auto;
+    width: 100px;
+    height: 3px;
+  }
+}
