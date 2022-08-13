@@ -10802,7 +10802,7 @@ textarea.form-control-lg {
   border-radius: 50rem;
   margin-top: 0.25rem;
 }
-.btn-rounded--border {
+.btn-rounded--border-primary {
   border-color: #39a2db;
 }
 @media (max-width: 575.98px) {
