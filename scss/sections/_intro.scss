@@ -1,15 +1,23 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
-.intro-section {
+.intro {
   background: url('../../images/intro/intro_bg.jpg') center (center / cover)
     no-repeat;
   padding: 10rem 0;
   width: 100%;
   height: 100%;
+
+  &__row {
+    align-items: center;
+    color: $white;
+  }
 }
 
 .intros {
+  &--video {
+    text-align: right;
+  }
   .video-box {
     position: relative;
     a {

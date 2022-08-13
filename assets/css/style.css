@@ -10776,11 +10776,6 @@ textarea.form-control-lg {
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
   background-color: #fff;
 }
-@media (max-width: 575.98px) {
-  .btn-rounded {
-    display: none;
-  }
-}
 .btn-rounded span {
   position: absolute;
   background-color: #39a2db;
@@ -10803,6 +10798,15 @@ textarea.form-control-lg {
 .btn-rounded:hover span {
   background-color: rgba(0, 0, 0, 0.6);
 }
+.btn-rounded--pill {
+  border-radius: 50rem;
+  margin-top: 0.25rem;
+}
+@media (max-width: 575.98px) {
+  .btn-rounded--header {
+    display: none;
+  }
+}
 
 .display-2 {
   margin-bottom: 1rem;
@@ -10819,6 +10823,7 @@ textarea.form-control-lg {
   display: block;
   text-transform: none;
   margin-top: 1.2rem;
+  line-height: 1.5;
 }
 @media (min-width: 992px) {
   .display-2--descr {
@@ -10879,6 +10884,11 @@ textarea.form-control-lg {
 .menu {
   background: linear-gradient(to right, rgba(57, 162, 219, 0.95), rgba(19, 99, 223, 0.95));
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 .menu .logo {
   font-family: "Josefin Sans", sans-serif;
@@ -10902,13 +10912,20 @@ textarea.form-control-lg {
   color: #06283d;
 }
 
-.intro-section {
+.intro {
   background: url("../../images/intro/intro_bg.jpg") center center/cover no-repeat;
   padding: 10rem 0;
   width: 100%;
   height: 100%;
 }
+.intro__row {
+  align-items: center;
+  color: #fff;
+}
 
+.intros--video {
+  text-align: right;
+}
 .intros .video-box {
   position: relative;
 }

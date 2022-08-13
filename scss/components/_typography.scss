@@ -17,6 +17,7 @@
     display: block;
     text-transform: none;
     margin-top: 1.2rem;
+    line-height: 1.5;
 
     @include media-breakpoint-up(lg) {
       font-size: 1.4rem;

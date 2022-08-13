@@ -2,10 +2,6 @@
 @use '../components/mixins' as *;
 
 .btn-rounded {
-  @include media-breakpoint-down(sm) {
-    display: none;
-  }
-
   position: relative;
   padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
   font-weight: 600;
@@ -34,6 +30,17 @@
 
     span {
       background-color: rgba($black, 0.6);
+    }
+  }
+
+  &--pill {
+    border-radius: 50rem;
+    margin-top: 0.25rem;
+  }
+
+  &--header {
+    @include media-breakpoint-down(sm) {
+      display: none;
     }
   }
 }
