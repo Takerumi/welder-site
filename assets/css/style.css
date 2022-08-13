@@ -10758,6 +10758,60 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.row-wrapper, .intro__row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  --bs-gutter-y: 1rem;
+}
+.row-wrapper > *, .intro__row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
 @keyframes pulse-border {
   0% {
     transform: scale(1);
@@ -10962,27 +11016,14 @@ textarea.form-control-lg {
   align-items: center;
   color: #fff;
 }
-
-.intros--video {
-  text-align: right;
-}
-.intros .video-box {
-  position: relative;
-}
-.intros .video-box a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.intros .video-box a span i {
-  font-size: 6rem;
-  color: #1363df;
-}
-@media (max-width: 767.98px) {
-  .intros .video-box {
-    display: none;
+@media (min-width: 768px) {
+  .intro__block {
+    flex: 0 0 auto;
+    width: 50%;
   }
+}
+.intro__block--video {
+  text-align: right;
 }
 
 .border-animation {
@@ -11000,6 +11041,25 @@ textarea.form-control-lg {
 }
 .border-animation--border-2 {
   animation-delay: 1.5s;
+}
+
+.video-box {
+  position: relative;
+}
+.video-box a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-box a span i {
+  font-size: 6rem;
+  color: #1363df;
+}
+@media (max-width: 767.98px) {
+  .video-box {
+    display: none;
+  }
 }
 
 .campanies {

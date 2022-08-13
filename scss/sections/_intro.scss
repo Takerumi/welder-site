@@ -9,29 +9,18 @@
   height: 100%;
 
   &__row {
+    @extend .row-wrapper;
     align-items: center;
     color: $white;
   }
-}
 
-.intros {
-  &--video {
-    text-align: right;
-  }
-  .video-box {
-    position: relative;
-    a {
-      @include absolute-center;
-      span {
-        i {
-          font-size: 6rem;
-          color: $secondary;
-        }
-      }
+  &__block {
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
     }
 
-    @include media-breakpoint-down(md) {
-      display: none;
+    &--video {
+      text-align: right;
     }
   }
 }

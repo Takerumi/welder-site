@@ -1,0 +1,19 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.video-box {
+  position: relative;
+  a {
+    @include absolute-center;
+    span {
+      i {
+        font-size: 6rem;
+        color: $secondary;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
