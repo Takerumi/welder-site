@@ -10855,6 +10855,15 @@ textarea.form-control-lg {
   background-color: #39a2db;
 }
 
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.subtitle--white {
+  color: #fff;
+  padding: 0.25rem 0;
+}
+
 .display-3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -11064,6 +11073,13 @@ textarea.form-control-lg {
   padding: 0;
   background: linear-gradient(to right, rgba(57, 162, 219, 0.95), rgba(19, 99, 223, 0.95));
 }
+.testimonials__row {
+  text-align: center;
+  align-items: center;
+}
+.testimonials__row--white {
+  color: #fff;
+}
 .testimonials__card {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 2rem 1.25rem;
@@ -11082,6 +11098,9 @@ textarea.form-control-lg {
   font-size: 1rem;
   color: rgba(57, 162, 219, 0.7);
 }
+.testimonials__text {
+  line-height: 2;
+}
 .testimonials__pic {
   width: 6rem;
   height: 6rem;
@@ -11090,7 +11109,10 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
 }
 .testimonials__pic img {
+  max-width: 100%;
+  height: auto;
   border: 0.32rem solid rgba(57, 162, 219, 0.7);
+  border-radius: 50%;
 }
 .testimonials__name {
   padding-top: 3rem;
@@ -11106,6 +11128,10 @@ textarea.form-control-lg {
 .testimonials__name p {
   padding-bottom: 2rem;
   text-transform: capitalize;
+  font-weight: 300;
+}
+.testimonials .carousel__buttons {
+  text-align: center;
 }
 
 .portfolio {

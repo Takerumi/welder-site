@@ -6,6 +6,14 @@
   padding: 0;
   @include gradient;
 
+  &__row {
+    text-align: center;
+    align-items: center;
+    &--white {
+      color: $white;
+    }
+  }
+
   &__card {
     background-color: rgba($white, 0.8);
     padding: 2rem 1.25rem;
@@ -25,6 +33,10 @@
     }
   }
 
+  &__text {
+    line-height: 2;
+  }
+
   &__pic {
     width: 6rem;
     height: 6rem;
@@ -33,7 +45,10 @@
     transform: translate(-50%, -50%);
 
     img {
+      max-width: 100%;
+      height: auto;
       border: 0.32rem solid rgba($primary, 0.7);
+      border-radius: 50%;
     }
   }
 
@@ -52,6 +67,13 @@
     p {
       padding-bottom: 2rem;
       text-transform: capitalize;
+      font-weight: 300;
+    }
+  }
+
+  .carousel {
+    &__buttons {
+      text-align: center;
     }
   }
 }
