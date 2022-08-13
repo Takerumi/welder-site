@@ -10888,6 +10888,9 @@ textarea.form-control-lg {
 .display-3--title-form {
   margin-bottom: 3rem;
 }
+.display-3--uppercase {
+  text-transform: uppercase;
+}
 
 .border-right {
   border-right: 0.1rem solid #dee2e6;
@@ -11132,6 +11135,17 @@ textarea.form-control-lg {
 }
 .testimonials .carousel__buttons {
   text-align: center;
+}
+
+.faq__row {
+  text-align: center;
+}
+.faq .accordion__row {
+  margin-top: 3rem;
+}
+.faq .accordion__row .accordion-item {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
 }
 
 .portfolio {
