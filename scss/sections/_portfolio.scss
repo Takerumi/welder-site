@@ -4,14 +4,26 @@
 .portfolio {
   padding: 4rem 0;
 
+  &__row {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
   button {
     text-transform: capitalize;
   }
 }
 
 .filter {
-  button {
-    margin-bottom: 0.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  --bs-gutter-x: 1rem;
+
+  div {
+    button {
+      margin-bottom: 0.5rem;
+    }
   }
 }
 
@@ -22,6 +34,7 @@
   overflow: hidden;
   margin-bottom: 1.2rem;
   border-top: 0.5rem solid $primary;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 
   img {
     width: 100%;

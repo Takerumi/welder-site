@@ -10891,6 +10891,9 @@ textarea.form-control-lg {
 .display-3--uppercase {
   text-transform: uppercase;
 }
+.display-3--capitalize {
+  text-transform: capitalize;
+}
 
 .border-right {
   border-right: 0.1rem solid #dee2e6;
@@ -11151,11 +11154,21 @@ textarea.form-control-lg {
 .portfolio {
   padding: 4rem 0;
 }
+.portfolio__row {
+  text-align: center;
+  margin-top: 3rem;
+}
 .portfolio button {
   text-transform: capitalize;
 }
 
-.filter button {
+.filter {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  --bs-gutter-x: 1rem;
+}
+.filter div button {
   margin-bottom: 0.5rem;
 }
 
@@ -11166,6 +11179,7 @@ textarea.form-control-lg {
   overflow: hidden;
   margin-bottom: 1.2rem;
   border-top: 0.5rem solid #39a2db;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 .portfolio-box img {
   width: 100%;
