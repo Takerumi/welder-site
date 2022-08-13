@@ -6,9 +6,19 @@
   background-color: $dark-blue;
 }
 
-// contact box
+// контакты
 .contact-box {
   position: relative;
+  display: flex;
+  padding-top: 0.25rem;
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+  }
 
   &__icon {
     width: 2rem;
@@ -49,9 +59,21 @@
   }
 }
 
-// social media
+// социальные сети
 .footer-sm {
   background-color: #053742;
+
+  &__row {
+    padding: 1.5rem 0;
+    color: $white;
+  }
+
+  &__descr {
+    margin-bottom: 1.5rem;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
 
   a {
     color: $white;
@@ -67,7 +89,25 @@
   }
 }
 
-// campany info
+// о компании
+.info {
+  color: $white;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  &__col {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  &__descr {
+    line-height: 2;
+  }
+  &__subtitle {
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+}
+
 .campany-list {
   display: block;
   list-style-type: none;
@@ -86,9 +126,14 @@
   }
 }
 
-// copyrights info
+// авторские права
 .footer-bottom {
   background-color: $black;
+  padding: 3rem 0;
+
+  &__row {
+    color: $white;
+  }
 
   &__copyright {
     color: $gray-600;
@@ -103,21 +148,5 @@
         text-decoration: underline;
       }
     }
-  }
-}
-
-// back to top btn
-.back-to-top {
-  position: fixed;
-  width: 3rem;
-  height: 3rem;
-  right: 1.875rem;
-  bottom: 1.875rem;
-  z-index: 99;
-
-  i {
-    color: $white;
-    font-size: 1rem;
-    @include absolute-center;
   }
 }

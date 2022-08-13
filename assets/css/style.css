@@ -11297,6 +11297,18 @@ textarea.form-control-lg {
 
 .contact-box {
   position: relative;
+  display: flex;
+  padding-top: 0.25rem;
+}
+@media (min-width: 768px) {
+  .contact-box {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .contact-box {
+    display: flex;
+  }
 }
 .contact-box__icon {
   width: 2rem;
@@ -11339,6 +11351,18 @@ textarea.form-control-lg {
 .footer-sm {
   background-color: #053742;
 }
+.footer-sm__row {
+  padding: 1.5rem 0;
+  color: #fff;
+}
+.footer-sm__descr {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .footer-sm__descr {
+    margin-bottom: 0;
+  }
+}
 .footer-sm a {
   color: #fff;
 }
@@ -11350,6 +11374,24 @@ textarea.form-control-lg {
   .footer-sm a i {
     font-size: 1.6rem;
   }
+}
+
+.info {
+  color: #fff;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+}
+.info__col {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.info__descr {
+  line-height: 2;
+}
+.info__subtitle {
+  text-transform: capitalize;
+  font-weight: 700;
 }
 
 .campany-list {
@@ -11370,6 +11412,10 @@ textarea.form-control-lg {
 
 .footer-bottom {
   background-color: #000;
+  padding: 3rem 0;
+}
+.footer-bottom__row {
+  color: #fff;
 }
 .footer-bottom__copyright {
   color: #6c757d;
@@ -11382,23 +11428,6 @@ textarea.form-control-lg {
 .footer-bottom__copyright a:hover {
   color: #39a2db;
   text-decoration: underline;
-}
-
-.back-to-top {
-  position: fixed;
-  width: 3rem;
-  height: 3rem;
-  right: 1.875rem;
-  bottom: 1.875rem;
-  z-index: 99;
-}
-.back-to-top i {
-  color: #fff;
-  font-size: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */
