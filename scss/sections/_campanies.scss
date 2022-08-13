@@ -1,5 +1,13 @@
+@use '../custom' as *;
+
 .campanies {
   padding: 1rem 0 0 0;
+
+  &__row {
+    @extend .row-wrapper;
+    text-align: center;
+  }
+
   &__logo-box {
     position: relative;
     max-width: 100%;
@@ -22,8 +30,5 @@
     font-weight: 700;
     font-size: 1.25rem;
     margin: 1.5rem 0 1rem 0;
-  }
-  &__wrapper {
-    margin-top: 1.5rem;
   }
 }

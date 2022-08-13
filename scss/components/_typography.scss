@@ -27,24 +27,30 @@
 }
 
 // линия заголовка
-.heading-line::before {
-  content: '';
-  width: 10rem;
-  height: 0.1rem;
-  display: block;
-  margin: 0 auto;
-  background-color: $primary;
-}
+.heading-line {
+  &:before {
+    content: '';
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+  }
 
-.heading-line::after {
-  content: '';
-  width: 2rem;
-  height: 0.2rem;
-  padding-top: 0.5rem;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  background-color: $primary;
+  &:after {
+    content: '';
+    width: 2rem;
+    height: 0.2rem;
+    padding-top: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: $primary;
+  }
+
+  &--mb {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .subtitle {
