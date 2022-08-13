@@ -10802,6 +10802,9 @@ textarea.form-control-lg {
   border-radius: 50rem;
   margin-top: 0.25rem;
 }
+.btn-rounded--border {
+  border-color: #39a2db;
+}
 @media (max-width: 575.98px) {
   .btn-rounded--header {
     display: none;
@@ -10854,6 +10857,7 @@ textarea.form-control-lg {
 
 .display-3 {
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 .display-3--title {
   font-size: 1.2rem;
@@ -10861,6 +10865,7 @@ textarea.form-control-lg {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   display: inline-block;
+  margin-top: 0.25rem;
   background-image: linear-gradient(to right, #39a2db, #1363df);
   background-clip: text;
   -webkit-background-clip: text;
@@ -10870,6 +10875,9 @@ textarea.form-control-lg {
   .display-3--title {
     font-size: 1.8rem;
   }
+}
+.display-3--title-form {
+  margin-bottom: 3rem;
 }
 
 .border-right {
@@ -10992,34 +11000,62 @@ textarea.form-control-lg {
   margin-top: 1.5rem;
 }
 
+.services__row {
+  text-align: center;
+  padding-top: 3rem;
+}
 @media (max-width: 575.98px) {
-  .our-services .row--reverse {
+  .services__row--reverse {
     flex-direction: column-reverse;
   }
 }
-.our-services .services {
+.services__wrapper {
+  padding: 1rem;
+}
+.services__wrapper--start {
+  text-align: left;
+  padding: 1.5rem;
+}
+.services__descr {
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+.services__subtitle {
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+.services__text {
+  font-weight: 300;
+}
+.services .service {
   position: relative;
   padding: 1rem 0;
+  margin-top: 1.5rem;
 }
-.our-services .services__content {
+.services .service__content {
   padding: 1rem;
   margin-top: 0;
 }
 @media (min-width: 992px) {
-  .our-services .services__content {
+  .services .service__content {
     margin-top: 5rem;
   }
 }
-.our-services .services__content .icon {
+.services .service__content .icon {
+  display: block;
   font-size: 1.5rem;
   color: #39a2db;
 }
 @media (min-width: 992px) {
-  .our-services .services__content .icon {
+  .services .service__content .icon {
     font-size: 2.5rem;
   }
 }
-.our-services .services__pic {
+.services .service__text {
+  line-height: 2;
+}
+.services .service__pic {
   max-width: 100%;
 }
 
