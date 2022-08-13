@@ -11026,23 +11026,6 @@ textarea.form-control-lg {
   text-align: right;
 }
 
-.border-animation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 6rem;
-  height: 6rem;
-  border: 0.55rem solid #fff;
-  border-radius: 50%;
-  animation: pulse-border 1.5s linear infinite;
-}
-.border-animation--border-1 {
-  animation-delay: 1s;
-}
-.border-animation--border-2 {
-  animation-delay: 1.5s;
-}
-
 .video-box {
   position: relative;
 }
@@ -11060,6 +11043,23 @@ textarea.form-control-lg {
   .video-box {
     display: none;
   }
+}
+
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  border: 0.55rem solid #fff;
+  border-radius: 50%;
+  animation: pulse-border 1.5s linear infinite;
+}
+.border-animation--border-1 {
+  animation-delay: 1s;
+}
+.border-animation--border-2 {
+  animation-delay: 1.8s;
 }
 
 .campanies {
