@@ -4,14 +4,33 @@
 .get-started {
   padding: 4rem 0;
   background-color: $gray-200;
+  &__row {
+    color: $white;
+    margin-top: 1.5rem;
+  }
+  &__descr {
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    @include gradient;
+  }
+  &__form {
+    background-color: $white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 1rem 0;
+  }
 }
 
 .cta-info {
   padding: 3rem 1.5rem;
   margin: 1rem 0;
+  width: 100%;
 
   @include media-breakpoint-up(sm) {
     padding: 3rem;
+  }
+
+  &__text {
+    line-height: 2;
   }
 
   &__list {
@@ -35,9 +54,23 @@
 // форма
 .form {
   padding: 3rem 1.5rem;
+  width: 100%;
+  padding-bottom: 0.5rem;
+
+  .form-control {
+    &--shadow {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  }
 
   @include media-breakpoint-up(sm) {
     padding: 3rem;
+  }
+
+  &__btn {
+    text-align: center;
+    display: grid;
+    margin-top: 0.25rem;
   }
 
   button {

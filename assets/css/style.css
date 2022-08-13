@@ -10895,13 +10895,17 @@ textarea.form-control-lg {
   text-transform: capitalize;
 }
 
+.display-4 {
+  font-weight: 700;
+}
+
 .border-right {
   border-right: 0.1rem solid #dee2e6;
   height: 100%;
 }
 
-.gradient {
-  background: linear-gradient(to right, rgba(57, 162, 219, 0.95), rgba(19, 99, 223, 0.95));
+.row--center {
+  text-align: center;
 }
 
 .menu {
@@ -11002,9 +11006,6 @@ textarea.form-control-lg {
 }
 .campanies__logo-box img:hover {
   filter: grayscale(120);
-}
-.campanies__row {
-  text-align: center;
 }
 .campanies__heading {
   font-weight: 700;
@@ -11140,9 +11141,6 @@ textarea.form-control-lg {
   text-align: center;
 }
 
-.faq__row {
-  text-align: center;
-}
 .faq .accordion__row {
   margin-top: 3rem;
 }
@@ -11225,15 +11223,33 @@ textarea.form-control-lg {
   padding: 4rem 0;
   background-color: #e9ecef;
 }
+.get-started__row {
+  color: #fff;
+  margin-top: 1.5rem;
+}
+.get-started__descr {
+  padding: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to right, rgba(57, 162, 219, 0.95), rgba(19, 99, 223, 0.95));
+}
+.get-started__form {
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 1rem 0;
+}
 
 .cta-info {
   padding: 3rem 1.5rem;
   margin: 1rem 0;
+  width: 100%;
 }
 @media (min-width: 576px) {
   .cta-info {
     padding: 3rem;
   }
+}
+.cta-info__text {
+  line-height: 2;
 }
 .cta-info__list {
   position: relative;
@@ -11253,11 +11269,21 @@ textarea.form-control-lg {
 
 .form {
   padding: 3rem 1.5rem;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+.form .form-control--shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 576px) {
   .form {
     padding: 3rem;
   }
+}
+.form__btn {
+  text-align: center;
+  display: grid;
+  margin-top: 0.25rem;
 }
 .form button {
   border: none;

@@ -2,10 +2,6 @@
 @use '../components/mixins' as *;
 
 .faq {
-  &__row {
-    text-align: center;
-  }
-
   .accordion {
     &__row {
       margin-top: 3rem;
