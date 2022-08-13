@@ -11070,7 +11070,19 @@ textarea.form-control-lg {
 .campanies__row {
   text-align: center;
 }
-.campanies__logo-box {
+@media (min-width: 768px) {
+  .campanies__logo-box {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .campanies__logo-box {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+}
+.campanies__logo {
   position: relative;
   max-width: 100%;
   height: 3rem;
@@ -11079,10 +11091,11 @@ textarea.form-control-lg {
   text-align: center;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
-.campanies__logo-box img {
+.campanies__logo img {
+  max-width: 100%;
   height: 100%;
 }
-.campanies__logo-box img:hover {
+.campanies__logo img:hover {
   filter: grayscale(120);
 }
 .campanies__heading {

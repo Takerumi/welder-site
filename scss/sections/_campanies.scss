@@ -9,6 +9,15 @@
   }
 
   &__logo-box {
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(2);
+    }
+  }
+
+  &__logo {
     position: relative;
     max-width: 100%;
     height: 3rem;
@@ -18,6 +27,7 @@
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 
     img {
+      max-width: 100%;
       height: 100%;
 
       &:hover {
