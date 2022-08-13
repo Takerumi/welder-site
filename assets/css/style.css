@@ -10963,7 +10963,7 @@ textarea.form-control-lg {
 }
 
 .campanies {
-  padding: 0 0 5rem 0;
+  padding: 1rem 0 0 0;
 }
 .campanies__logo-box {
   position: relative;
@@ -10972,12 +10972,24 @@ textarea.form-control-lg {
   margin-bottom: 2rem;
   padding: 0.5rem;
   text-align: center;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 .campanies__logo-box img {
   height: 100%;
 }
 .campanies__logo-box img:hover {
   filter: grayscale(120);
+}
+.campanies__row {
+  text-align: center;
+}
+.campanies__heading {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 1.5rem 0 1rem 0;
+}
+.campanies__wrapper {
+  margin-top: 1.5rem;
 }
 
 @media (max-width: 575.98px) {

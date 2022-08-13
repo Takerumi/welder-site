@@ -1,5 +1,5 @@
 .campanies {
-  padding: 0 0 5rem 0;
+  padding: 1rem 0 0 0;
   &__logo-box {
     position: relative;
     max-width: 100%;
@@ -7,6 +7,7 @@
     margin-bottom: 2rem;
     padding: 0.5rem;
     text-align: center;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 
     img {
       height: 100%;
@@ -15,5 +16,18 @@
         filter: grayscale(120);
       }
     }
+  }
+
+  &__row {
+    text-align: center;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 1.5rem 0 1rem 0;
+  }
+  &__wrapper {
+    margin-top: 1.5rem;
   }
 }
