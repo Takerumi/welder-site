@@ -10793,7 +10793,7 @@ textarea.form-control-lg {
   }
 }
 
-.row-wrapper, .campanies__row, .intro__row {
+.row-wrapper, .services__row, .services__descr, .campanies__row, .intro__row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -10803,7 +10803,7 @@ textarea.form-control-lg {
   margin-left: calc(-0.5 * var(--bs-gutter-x));
   --bs-gutter-y: 1rem;
 }
-.row-wrapper > *, .campanies__row > *, .intro__row > * {
+.row-wrapper > *, .services__row > *, .services__descr > *, .campanies__row > *, .intro__row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -10955,11 +10955,6 @@ textarea.form-control-lg {
   font-weight: 700;
 }
 
-.border-right {
-  border-right: 0.1rem solid #dee2e6;
-  height: 100%;
-}
-
 .row--center {
   text-align: center;
 }
@@ -11105,10 +11100,13 @@ textarea.form-control-lg {
 }
 
 .services__row {
+  align-items: center;
+}
+.services__row--center {
   text-align: center;
   padding-top: 3rem;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .services__row--reverse {
     flex-direction: column-reverse;
   }
@@ -11118,7 +11116,17 @@ textarea.form-control-lg {
 }
 .services__wrapper--start {
   text-align: left;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 2.4rem;
+}
+.services__wrapper--border-right {
+  border-right: 0.1rem solid #dee2e6;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .services__wrapper {
+    flex: 0 0 auto;
+    width: 50%;
+  }
 }
 .services__descr {
   padding: 0.5rem 0;
@@ -11136,15 +11144,12 @@ textarea.form-control-lg {
   position: relative;
   padding: 1rem 0;
   margin-top: 1.5rem;
+  flex: 0 0 auto;
+  width: 100%;
 }
 .services .service__content {
   padding: 1rem;
   margin-top: 0;
-}
-@media (min-width: 992px) {
-  .services .service__content {
-    margin-top: 5rem;
-  }
 }
 .services .service__content .icon {
   display: block;
@@ -11161,6 +11166,28 @@ textarea.form-control-lg {
 }
 .services .service__pic {
   max-width: 100%;
+}
+.services .service__pic img {
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 576px) {
+  .services .service {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .services .service {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .services .service {
+    flex: 0 0 auto;
+    width: 50%;
+  }
 }
 
 .testimonials {

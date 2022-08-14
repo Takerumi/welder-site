@@ -2,10 +2,14 @@
 
 .services {
   &__row {
-    text-align: center;
-    padding-top: 3rem;
+    @extend .row-wrapper;
+    align-items: center;
+    &--center {
+      text-align: center;
+      padding-top: 3rem;
+    }
     &--reverse {
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         flex-direction: column-reverse;
       }
     }
@@ -14,10 +18,20 @@
     padding: 1rem;
     &--start {
       text-align: left;
-      padding: 1.5rem;
+      padding: 1.5rem 1.5rem 1.5rem 2.4rem;
+    }
+
+    &--border-right {
+      border-right: 0.1rem solid $gray-300;
+      height: 100%;
+    }
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
     }
   }
   &__descr {
+    @extend .row-wrapper;
     padding: 0.5rem 0;
     margin-bottom: 1rem;
   }
@@ -39,10 +53,6 @@
       padding: 1rem;
       margin-top: 0;
 
-      @include media-breakpoint-up(lg) {
-        margin-top: 5rem;
-      }
-
       .icon {
         display: block;
         font-size: 1.5rem;
@@ -59,6 +69,23 @@
     }
     &__pic {
       max-width: 100%;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    @include media-breakpoint-up(xs) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(sm) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(6);
     }
   }
 }
