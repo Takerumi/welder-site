@@ -10793,7 +10793,7 @@ textarea.form-control-lg {
   }
 }
 
-.row-wrapper, .testimonials__row, .services__row, .services__descr, .campanies__row, .intro__row {
+.row-wrapper, .faq .accordion__row, .testimonials__row, .services__row, .services__descr, .campanies__row, .intro__row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -10803,7 +10803,7 @@ textarea.form-control-lg {
   margin-left: calc(-0.5 * var(--bs-gutter-x));
   --bs-gutter-y: 1rem;
 }
-.row-wrapper > *, .testimonials__row > *, .services__row > *, .services__descr > *, .campanies__row > *, .intro__row > * {
+.row-wrapper > *, .faq .accordion__row > *, .testimonials__row > *, .services__row > *, .services__descr > *, .campanies__row > *, .intro__row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -10953,10 +10953,6 @@ textarea.form-control-lg {
 
 .display-4 {
   font-weight: 700;
-}
-
-.row--center {
-  text-align: center;
 }
 
 .hr--footer {
@@ -11257,9 +11253,18 @@ textarea.form-control-lg {
 }
 
 .faq .accordion__row {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
-.faq .accordion__row .accordion-item {
+.faq .accordion__row--center {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .faq .accordion__block {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+.faq .accordion .accordion-item {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   margin-bottom: 1rem;
 }

@@ -4,12 +4,23 @@
 .faq {
   .accordion {
     &__row {
-      margin-top: 3rem;
+      @extend .row-wrapper;
+      margin-top: 2rem;
 
-      .accordion-item {
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-        margin-bottom: 1rem;
+      &--center {
+        text-align: center;
       }
+    }
+
+    &__block {
+      @include media-breakpoint-up(md) {
+        @include make-col(12);
+      }
+    }
+
+    .accordion-item {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      margin-bottom: 1rem;
     }
   }
 }
