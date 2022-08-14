@@ -10793,7 +10793,7 @@ textarea.form-control-lg {
   }
 }
 
-.row-wrapper, .services__row, .services__descr, .campanies__row, .intro__row {
+.row-wrapper, .testimonials__row, .services__row, .services__descr, .campanies__row, .intro__row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -10803,7 +10803,7 @@ textarea.form-control-lg {
   margin-left: calc(-0.5 * var(--bs-gutter-x));
   --bs-gutter-y: 1rem;
 }
-.row-wrapper > *, .services__row > *, .services__descr > *, .campanies__row > *, .intro__row > * {
+.row-wrapper > *, .testimonials__row > *, .services__row > *, .services__descr > *, .campanies__row > *, .intro__row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
