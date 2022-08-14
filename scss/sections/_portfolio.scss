@@ -4,9 +4,24 @@
 .portfolio {
   padding: 4rem 0;
 
-  &__row {
+  &__heading {
+    @extend .row-wrapper;
     text-align: center;
     margin-top: 3rem;
+  }
+
+  &__row {
+    @extend .row-wrapper;
+  }
+
+  &__block {
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
   }
 
   button {
@@ -15,14 +30,21 @@
 }
 
 .filter {
+  @extend .row-wrapper;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   --bs-gutter-x: 1rem;
 
   div {
     button {
       margin-bottom: 0.5rem;
+    }
+  }
+
+  &__wrap {
+    @include media-breakpoint-up(md) {
+      @include make-col(12);
     }
   }
 }
@@ -41,7 +63,7 @@
     height: 100%;
   }
 
-  .portfolio-info {
+  &__info {
     background-color: rgba($secondary, 0.75);
     width: 100%;
     height: 100%;
@@ -50,27 +72,28 @@
     left: 0;
     opacity: 0;
     visibility: hidden;
+  }
 
-    .caption {
-      text-align: center;
-      @include absolute-center;
-      color: $white;
-      font-weight: 600;
+  &__caption {
+    text-align: center;
+    @include absolute-center;
+    color: $white;
+    font-weight: 600;
 
-      h4 {
-        text-transform: uppercase;
-        font-weight: 700;
-        display: block;
-      }
+    h4 {
+      text-transform: uppercase;
+      font-weight: 700;
+      display: block;
     }
   }
+
   &:hover {
     img {
       transform: scale(1.5);
       @include transition-prop;
     }
 
-    .portfolio-info {
+    .portfolio-box__info {
       opacity: 1;
       visibility: visible;
       @include transition-prop;

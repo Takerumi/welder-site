@@ -10793,7 +10793,7 @@ textarea.form-control-lg {
   }
 }
 
-.row-wrapper, .faq .accordion__row, .testimonials__row, .services__row, .services__descr, .campanies__row, .intro__row {
+.row-wrapper, .portfolio__heading, .portfolio__row, .filter, .faq .accordion__row, .testimonials__row, .services__row, .services__descr, .campanies__row, .intro__row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -10803,7 +10803,7 @@ textarea.form-control-lg {
   margin-left: calc(-0.5 * var(--bs-gutter-x));
   --bs-gutter-y: 1rem;
 }
-.row-wrapper > *, .faq .accordion__row > *, .testimonials__row > *, .services__row > *, .services__descr > *, .campanies__row > *, .intro__row > * {
+.row-wrapper > *, .portfolio__heading > *, .portfolio__row > *, .filter > *, .faq .accordion__row > *, .testimonials__row > *, .services__row > *, .services__descr > *, .campanies__row > *, .intro__row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -11272,9 +11272,21 @@ textarea.form-control-lg {
 .portfolio {
   padding: 4rem 0;
 }
-.portfolio__row {
+.portfolio__heading {
   text-align: center;
   margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .portfolio__block {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio__block {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
 }
 .portfolio button {
   text-transform: capitalize;
@@ -11282,12 +11294,18 @@ textarea.form-control-lg {
 
 .filter {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   --bs-gutter-x: 1rem;
 }
 .filter div button {
   margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .filter__wrap {
+    flex: 0 0 auto;
+    width: 100%;
+  }
 }
 
 .portfolio-box {
@@ -11303,7 +11321,7 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
 }
-.portfolio-box .portfolio-info {
+.portfolio-box__info {
   background-color: rgba(19, 99, 223, 0.75);
   width: 100%;
   height: 100%;
@@ -11313,7 +11331,7 @@ textarea.form-control-lg {
   opacity: 0;
   visibility: hidden;
 }
-.portfolio-box .portfolio-info .caption {
+.portfolio-box__caption {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -11322,7 +11340,7 @@ textarea.form-control-lg {
   color: #fff;
   font-weight: 600;
 }
-.portfolio-box .portfolio-info .caption h4 {
+.portfolio-box__caption h4 {
   text-transform: uppercase;
   font-weight: 700;
   display: block;
@@ -11332,7 +11350,7 @@ textarea.form-control-lg {
   transition-duration: 1000ms;
   transition-property: all;
 }
-.portfolio-box:hover .portfolio-info {
+.portfolio-box:hover .portfolio-box__info {
   opacity: 1;
   visibility: visible;
   transition-duration: 1000ms;
