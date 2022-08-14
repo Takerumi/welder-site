@@ -679,15 +679,15 @@
     <!-- Секция обратной связи / форма  -->
     <section id="contact" class="get-started">
       <div class="container">
-        <div class="row row--center">
+        <div class="get-started__row get-started__row--center">
           <h2 class="display-3 display-3--capitalize">Начало сотрудничества</h2>
           <div class="heading-line"></div>
           <p class="subtitle">
             Оставьте заявку и мы свяжемся с вами в ближайшее время.
           </p>
         </div>
-        <div class="row get-started__row">
-          <div class="col-12 col-lg-6 get-started__descr get-started__descr--gradient">
+        <div class="get-started__row get-started__row--white">
+          <div class="get-started__descr get-started__descr--gradient">
             <div class="cta-info">
               <h4 class="display-4">100% Выполение Обязанностей</h4>
               <p class="cta-info__text">
@@ -702,24 +702,29 @@
               </ul>
             </div>
           </div>
-          <div class="col-12 col-lg-6 get-started__form">
+          <div class="get-started__form">
             <div class="form">
               <h4 class="display-3--title display-3--title-form">Оставьте заявку</h4>
-              <form action="#" class="row">
-                <div class="col-lg-6 col-md-6 mb-3">
+              <form action="#" class="form__row">
+                <!-- col-lg-6 col-md-6 mb-3 -->
+                <div class="form__name">
                   <input type="text" placeholder="Имя" id="inputFirstName" class="form-control form-control--shadow form-control-lg">
                 </div>
-                <div class="col-lg-6 col-md-6 mb-3">
+                <!-- col-lg-6 col-md-6 mb-3 -->
+                <div class="form__name">
                   <input type="text" placeholder="Фамилия" id="inputLastName" class="form-control form-control--shadow form-control-lg">
                 </div>
-                <div class="col-lg-12 mb-3">
+                <!-- col-lg-12 mb-3 -->
+                <div class="form__email">
                   <input type="email" placeholder="E-mail адрес" id="inputEmail" class="form-control form-control--shadow form-control-lg">
                 </div>
-                <div class="col-lg-12 mb-3">
+                <!-- col-lg-12 mb-3 -->
+                <div class="form__msg">
                   <textarea name="message" placeholder="Текст заявки" id="message" rows="8" class="form-control form-control--shadow form-control-lg"></textarea>
                 </div>
                 <div class="form__btn">
-                  <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">Отправить
+                  <!-- pt-3 pb-3 btn-primary rounded-pill-->
+                  <button type="button" class="btn btn-primary btn-rounded--pill">Отправить
                     <i class="fas fa-paper-plane"></i>
                   </button>
                 </div>

@@ -10793,7 +10793,7 @@ textarea.form-control-lg {
   }
 }
 
-.row-wrapper, .portfolio__heading, .portfolio__row, .filter, .faq .accordion__row, .testimonials__row, .services__row, .services__descr, .campanies__row, .intro__row {
+.row-wrapper, .form__row, .get-started__row, .portfolio__heading, .portfolio__row, .filter, .faq .accordion__row, .testimonials__row, .services__row, .services__descr, .campanies__row, .intro__row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -10803,7 +10803,7 @@ textarea.form-control-lg {
   margin-left: calc(-0.5 * var(--bs-gutter-x));
   --bs-gutter-y: 1rem;
 }
-.row-wrapper > *, .portfolio__heading > *, .portfolio__row > *, .filter > *, .faq .accordion__row > *, .testimonials__row > *, .services__row > *, .services__descr > *, .campanies__row > *, .intro__row > * {
+.row-wrapper > *, .form__row > *, .get-started__row > *, .portfolio__heading > *, .portfolio__row > *, .filter > *, .faq .accordion__row > *, .testimonials__row > *, .services__row > *, .services__descr > *, .campanies__row > *, .intro__row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -11362,18 +11362,40 @@ textarea.form-control-lg {
   background-color: #e9ecef;
 }
 .get-started__row {
-  color: #fff;
   margin-top: 1.5rem;
+  --bs-gutter-y: 0rem;
+}
+.get-started__row--white {
+  color: #fff;
+}
+.get-started__row--center {
+  text-align: center;
 }
 .get-started__descr {
+  flex: 0 0 auto;
+  width: 100%;
   padding: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background: linear-gradient(to right, rgba(57, 162, 219, 0.95), rgba(19, 99, 223, 0.95));
 }
+@media (min-width: 992px) {
+  .get-started__descr {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
 .get-started__form {
+  flex: 0 0 auto;
+  width: 100%;
   background-color: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   padding: 1rem 0;
+}
+@media (min-width: 992px) {
+  .get-started__form {
+    flex: 0 0 auto;
+    width: 50%;
+  }
 }
 
 .cta-info {
@@ -11410,6 +11432,39 @@ textarea.form-control-lg {
   width: 100%;
   padding-bottom: 0.5rem;
 }
+.form__name {
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .form__name {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .form__name {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+.form__email {
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .form__email {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+.form__msg {
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .form__msg {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
 .form .form-control--shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
@@ -11422,6 +11477,10 @@ textarea.form-control-lg {
   text-align: center;
   display: grid;
   margin-top: 0.25rem;
+}
+.form__btn button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .form button {
   border: none;

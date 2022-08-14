@@ -5,18 +5,38 @@
   padding: 4rem 0;
   background-color: $gray-200;
   &__row {
-    color: $white;
+    @extend .row-wrapper;
     margin-top: 1.5rem;
+    --bs-gutter-y: 0rem;
+
+    &--white {
+      color: $white;
+    }
+    &--center {
+      text-align: center;
+    }
   }
   &__descr {
+    @include make-col(12);
+
     padding: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     @include gradient;
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(6);
+    }
   }
   &__form {
+    @include make-col(12);
+
     background-color: $white;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     padding: 1rem 0;
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(6);
+    }
   }
 }
 
@@ -48,33 +68,5 @@
       margin-right: 0.5rem;
       font-size: 1.2rem;
     }
-  }
-}
-
-// форма
-.form {
-  padding: 3rem 1.5rem;
-  width: 100%;
-  padding-bottom: 0.5rem;
-
-  .form-control {
-    &--shadow {
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    }
-  }
-
-  @include media-breakpoint-up(sm) {
-    padding: 3rem;
-  }
-
-  &__btn {
-    text-align: center;
-    display: grid;
-    margin-top: 0.25rem;
-  }
-
-  button {
-    border: none;
-    color: $white;
   }
 }

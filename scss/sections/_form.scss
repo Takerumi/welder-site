@@ -1,0 +1,64 @@
+@use '../custom' as *;
+
+.form {
+  padding: 3rem 1.5rem;
+  width: 100%;
+  padding-bottom: 0.5rem;
+
+  &__row {
+    @extend .row-wrapper;
+  }
+
+  &__name {
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(6);
+    }
+  }
+
+  &__email {
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(12);
+    }
+  }
+
+  &__msg {
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(12);
+    }
+  }
+
+  .form-control {
+    &--shadow {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    padding: 3rem;
+  }
+
+  &__btn {
+    text-align: center;
+    display: grid;
+    margin-top: 0.25rem;
+    button {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  button {
+    border: none;
+    color: $white;
+  }
+}
