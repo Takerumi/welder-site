@@ -738,10 +738,10 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <div class="row">
+        <div class="contacts">
                     <!-- номер телефона -->
-                    <div class="col-md-4 col-lg-4 contact-box">
-                      <div class="contact-box__icon">
+                    <div class="contacts__box">
+                      <div class="contacts__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                           <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
@@ -749,14 +749,14 @@
                           <path d="M15 3a6 6 0 0 1 6 6" />
                         </svg>
                       </div>
-                      <div class="contact-box__info">
-                        <a href="" class="contact-box__info--title">+79999999999</a>
-                        <p class="contact-box__info--subtitle">ПН-ПТ: 08:00-18:00</p>
+                      <div class="contacts__info">
+                        <a href="" class="contacts__info--title">+79999999999</a>
+                        <p class="contacts__info--subtitle">ПН-ПТ: 08:00-18:00</p>
                       </div>
                   </div>
                   <!-- почта -->
-                  <div class="col-md-4 col-lg-4 contact-box">
-                      <div class="contact-box__icon">
+                  <div class="contacts__box">
+                      <div class="contacts__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                           <polyline points="3 9 12 15 21 9 12 3 3 9" />
@@ -765,14 +765,14 @@
                           <line x1="15" y1="13" x2="21" y2="19" />
                         </svg>
                       </div>
-                      <div class="contact-box__info">
-                        <a href="" class="contact-box__info--title">info@company.com</a>
-                        <p class="contact-box__info--subtitle">Онлайн поддержка</p>
+                      <div class="contacts__info">
+                        <a href="" class="contacts__info--title">info@company.com</a>
+                        <p class="contacts__info--subtitle">Онлайн поддержка</p>
                       </div>
                   </div>
                   <!-- местонахождение -->
-                  <div class="col-md-4 col-lg-4 contact-box">
-                      <div class="contact-box__icon">
+                  <div class="contacts__box">
+                      <div class="contacts__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                           <line x1="18" y1="6" x2="18" y2="6.01" />
@@ -782,9 +782,9 @@
                           <line x1="15" y1="15" x2="15" y2="20" />
                         </svg>
                       </div>
-                      <div class="contact-box__info">
-                        <a href="" class="contact-box__info--title">Омск, Россия</a>
-                        <p class="contact-box__info--subtitle">Доковская, 2</p>
+                      <div class="contacts__info">
+                        <a href="" class="contacts__info--title">Омск, Россия</a>
+                        <p class="contacts__info--subtitle">Доковская, 2</p>
                       </div>
                   </div>
         </div>
@@ -793,9 +793,9 @@
             <!-- социальные сети -->
             <div class="footer-sm">
               <div class="container">
-                <div class="row row--center footer-sm__row">
-                  <div class="col-lg-5 col-md-6 footer-sm__descr">напишите нам в социальных сетях</div>
-                  <div class="col-lg-7 col-md-6">
+                <div class="social-media social-media--white social-media--center">
+                  <div class="social-media__descr">напишите нам в социальных сетях</div>
+                  <div class="social-media__links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-vk"></i></a>
@@ -807,8 +807,9 @@
       
             <!-- инфо о компании -->
             <div class="container">
-              <div class="row info">
-                <div class="col-12 col-sm-6 col-lg-6 info__col">
+              <div class="info">
+                <!-- col-12 col-sm-6 col-lg-6  -->
+                <div class="info__block">
                   <div class="info__brand">
                     <img src="images/logo.svg" alt="logo image" />
                   </div>
@@ -817,7 +818,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus exercitationem distinctio cum accusantium! Temporibus, optio quae.
                   </p>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-2 info__col">
+                <div class="info__block">
                   <h5 class="info__subtitle">Услуги</h5>
                   <hr class="hr--footer">
                   <ul class="list-inline campany-list">
@@ -827,7 +828,7 @@
                     <li><a href="#">Lorem ipsum</a></li>
                   </ul>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-2 info__col">
+                <div class="info__block">
                   <h5 class="info__subtitle">Полезные ссылки</h5>
                   <hr class="hr--footer">
                   <ul class="list-inline campany-list">
@@ -837,7 +838,7 @@
                     <li><a href="#">Помощь</a></li>
                   </ul>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-2 info__col">
+                <div class="info__block">
                   <h5 class="info__subtitle">Контакты</h5>
                   <hr class="hr--footer">
                   <ul class="list-inline campany-list">

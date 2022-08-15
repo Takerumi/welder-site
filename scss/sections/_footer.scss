@@ -4,20 +4,41 @@
 .footer {
   padding-top: 1rem;
   background-color: $dark-blue;
+
+  &__row {
+    @extend .row-wrapper;
+    align-items: center;
+    padding: 1.5rem 0;
+    &--white {
+      color: $white;
+    }
+    &--center {
+      text-align: center;
+    }
+  }
 }
 
 // контакты
-.contact-box {
-  position: relative;
-  display: flex;
-  padding-top: 0.25rem;
+.contacts {
+  @extend .row-wrapper;
+  align-items: center;
+  padding: 1.5rem 0;
 
-  @include media-breakpoint-up(md) {
-    display: block;
-  }
-
-  @include media-breakpoint-up(lg) {
+  &__box {
+    position: relative;
     display: flex;
+    align-items: flex-start;
+    margin-top: 0;
+
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+      display: block;
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+      display: flex;
+    }
   }
 
   &__icon {
@@ -63,15 +84,40 @@
 .footer-sm {
   background-color: #053742;
 
-  &__row {
+  .social-media {
+    @extend .row-wrapper;
+    align-items: center;
     padding: 1.5rem 0;
-    color: $white;
-  }
+    &--white {
+      color: $white;
+    }
+    &--center {
+      text-align: center;
+    }
 
-  &__descr {
-    margin-bottom: 1.5rem;
-    @include media-breakpoint-up(md) {
-      margin-bottom: 0;
+    &__descr {
+      margin-bottom: 1rem;
+      margin-top: 0;
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+        margin-bottom: 0;
+      }
+
+      @include media-breakpoint-up(lg) {
+        @include make-col(5);
+      }
+    }
+
+    &__links {
+      margin-top: 0;
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+        margin-bottom: 0;
+      }
+
+      @include media-breakpoint-up(lg) {
+        @include make-col(7);
+      }
     }
   }
 
@@ -91,17 +137,31 @@
 
 // о компании
 .info {
+  @extend .row-wrapper;
+
   color: $white;
   justify-content: center;
   margin-top: 3rem;
   padding-bottom: 1rem;
-  &__col {
+
+  &__block {
+    @include make-col(12);
     margin: 0 auto;
     margin-bottom: 1.5rem;
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(6);
+    }
   }
+
   &__descr {
     line-height: 2;
   }
+
   &__subtitle {
     text-transform: capitalize;
     font-weight: 700;

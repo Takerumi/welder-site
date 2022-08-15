@@ -10793,7 +10793,7 @@ textarea.form-control-lg {
   }
 }
 
-.row-wrapper, .form__row, .get-started__row, .portfolio__heading, .portfolio__row, .filter, .faq .accordion__row, .testimonials__row, .services__row, .services__descr, .campanies__row, .intro__row {
+.row-wrapper, .footer__row, .contacts, .footer-sm .social-media, .info, .form__row, .get-started__row, .portfolio__heading, .portfolio__row, .filter, .faq .accordion__row, .testimonials__row, .services__row, .services__descr, .campanies__row, .intro__row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -10803,7 +10803,7 @@ textarea.form-control-lg {
   margin-left: calc(-0.5 * var(--bs-gutter-x));
   --bs-gutter-y: 1rem;
 }
-.row-wrapper > *, .form__row > *, .get-started__row > *, .portfolio__heading > *, .portfolio__row > *, .filter > *, .faq .accordion__row > *, .testimonials__row > *, .services__row > *, .services__descr > *, .campanies__row > *, .intro__row > * {
+.row-wrapper > *, .footer__row > *, .contacts > *, .footer-sm .social-media > *, .info > *, .form__row > *, .get-started__row > *, .portfolio__heading > *, .portfolio__row > *, .filter > *, .faq .accordion__row > *, .testimonials__row > *, .services__row > *, .services__descr > *, .campanies__row > *, .intro__row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -11491,56 +11491,75 @@ textarea.form-control-lg {
   padding-top: 1rem;
   background-color: #06283d;
 }
+.footer__row {
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.footer__row--white {
+  color: #fff;
+}
+.footer__row--center {
+  text-align: center;
+}
 
-.contact-box {
+.contacts {
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.contacts__box {
   position: relative;
   display: flex;
-  padding-top: 0.25rem;
+  align-items: flex-start;
+  margin-top: 0;
 }
 @media (min-width: 768px) {
-  .contact-box {
+  .contacts__box {
+    flex: 0 0 auto;
+    width: 33.33333333%;
     display: block;
   }
 }
 @media (min-width: 992px) {
-  .contact-box {
+  .contacts__box {
+    flex: 0 0 auto;
+    width: 33.33333333%;
     display: flex;
   }
 }
-.contact-box__icon {
+.contacts__icon {
   width: 2rem;
   stroke: #39a2db;
   padding-top: 0.6rem;
 }
 @media (min-width: 576px) {
-  .contact-box__icon {
+  .contacts__icon {
     width: 4rem;
   }
 }
-.contact-box__info {
+.contacts__info {
   padding: 0.4rem;
   font-weight: 600;
 }
-.contact-box__info--title {
+.contacts__info--title {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
 }
-.contact-box__info--title:hover {
+.contacts__info--title:hover {
   color: #39a2db;
 }
 @media (min-width: 576px) {
-  .contact-box__info--title {
+  .contacts__info--title {
     font-size: 1.4rem;
   }
 }
-.contact-box__info--subtitle {
+.contacts__info--subtitle {
   color: #6c757d;
   text-decoration: none;
   font-size: 0.8rem;
 }
 @media (min-width: 576px) {
-  .contact-box__info--subtitle {
+  .contacts__info--subtitle {
     font-size: 1rem;
   }
 }
@@ -11548,16 +11567,47 @@ textarea.form-control-lg {
 .footer-sm {
   background-color: #053742;
 }
-.footer-sm__row {
+.footer-sm .social-media {
+  align-items: center;
   padding: 1.5rem 0;
+}
+.footer-sm .social-media--white {
   color: #fff;
 }
-.footer-sm__descr {
-  margin-bottom: 1.5rem;
+.footer-sm .social-media--center {
+  text-align: center;
+}
+.footer-sm .social-media__descr {
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
 @media (min-width: 768px) {
-  .footer-sm__descr {
+  .footer-sm .social-media__descr {
+    flex: 0 0 auto;
+    width: 50%;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .footer-sm .social-media__descr {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+}
+.footer-sm .social-media__links {
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .footer-sm .social-media__links {
+    flex: 0 0 auto;
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .footer-sm .social-media__links {
+    flex: 0 0 auto;
+    width: 58.33333333%;
   }
 }
 .footer-sm a {
@@ -11579,9 +11629,23 @@ textarea.form-control-lg {
   margin-top: 3rem;
   padding-bottom: 1rem;
 }
-.info__col {
+.info__block {
+  flex: 0 0 auto;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 1.5rem;
+}
+@media (min-width: 576px) {
+  .info__block {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .info__block {
+    flex: 0 0 auto;
+    width: 50%;
+  }
 }
 .info__descr {
   line-height: 2;
