@@ -143,8 +143,9 @@
   justify-content: center;
   margin-top: 3rem;
   padding-bottom: 1rem;
+  padding-left: 1rem;
 
-  &__block {
+  &__company-block {
     @include make-col(12);
     margin: 0 auto;
     margin-bottom: 1.5rem;
@@ -158,6 +159,38 @@
     }
   }
 
+  &__block {
+    @include make-col(12);
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(2);
+    }
+  }
+
+  &__list {
+    display: block;
+    position: relative;
+    padding-left: 0;
+    list-style: none;
+    li {
+      margin-bottom: 0.5rem;
+      a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
   &__descr {
     line-height: 2;
   }
@@ -168,34 +201,27 @@
   }
 }
 
-.campany-list {
-  display: block;
-  list-style-type: none;
-  position: relative;
-
-  li {
-    margin-bottom: 0.5rem;
-    a {
-      color: $white;
-      text-decoration: none;
-
-      &:hover {
-        color: $primary;
-      }
-    }
-  }
-}
-
 // авторские права
-.footer-bottom {
+.copyright {
   background-color: $black;
   padding: 3rem 0;
 
   &__row {
-    color: $white;
+    @extend .row-wrapper;
+
+    &--center {
+      text-align: center;
+    }
+    &--white {
+      color: $white;
+    }
   }
 
-  &__copyright {
+  &__block {
+    @include make-col(12);
+  }
+
+  &__content {
     color: $gray-600;
     font-weight: 400;
 
