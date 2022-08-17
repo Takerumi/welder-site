@@ -10950,6 +10950,11 @@ textarea.form-control-lg {
 .display-3--capitalize {
   text-transform: capitalize;
 }
+@media (max-width: 575.98px) {
+  .display-3 {
+    font-size: 2rem;
+  }
+}
 
 .display-4 {
   font-weight: 700;

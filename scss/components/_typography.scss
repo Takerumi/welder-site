@@ -96,6 +96,10 @@
   &--capitalize {
     text-transform: capitalize;
   }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+  }
 }
 
 .display-4 {
